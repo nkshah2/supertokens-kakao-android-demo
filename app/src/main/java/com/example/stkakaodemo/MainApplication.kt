@@ -12,10 +12,10 @@ import java.net.CookiePolicy
 class MainApplication: Application() {
     override fun onCreate() {
         super.onCreate()
-        KakaoSdk.init(this, "0738d92ab58d6d7d76498f76ad586028")
+        KakaoSdk.init(this, "...")
         SuperTokens.init(
             this,
-            "http://192.168.29.87:3001",
+            "API_DOMAIN",
             null,
             null,
             null,
