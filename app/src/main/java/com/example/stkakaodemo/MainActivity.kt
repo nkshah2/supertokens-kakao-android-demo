@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             lifecycleScope.launch(Dispatchers.IO) {
                 val requestBuilder = Request.Builder()
                 requestBuilder
-                    .url("http://192.168.29.87:3001/auth/signout")
+                    .url("API_DOMAIN/auth/signout")
                     .addHeader("rid", "session")
                     .post(JSONObject().toString().toRequestBody())
 

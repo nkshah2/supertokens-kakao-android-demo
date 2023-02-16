@@ -60,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
 
                     var body = JSONObject()
                     body.put("thirdPartyId", "kakao")
-                    body.put("clientId", "0738d92ab58d6d7d76498f76ad586028")
+                    body.put("clientId", "...")
                     body.put("redirectURI", "redirectURI")
 
                     val authCodeResponse = JSONObject()
@@ -71,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
 
                     val requestBuilder = Request.Builder()
                     requestBuilder
-                        .url("http://192.168.29.87:3001/auth/signinup")
+                        .url("API_DOMAIN/auth/signinup")
                         .post(body.toString().toRequestBody())
                         .header("Content-Type", "application/json; charset=utf-8")
 
